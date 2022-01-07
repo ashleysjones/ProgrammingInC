@@ -1,0 +1,37 @@
+C Lab 0.
+
+Your lab instructor will  help you log into cis-linux2 using Putty, and give a
+short introduction to unix commands. Then they will show you 
+how to use pico to enter the file from class (repeated below) into a file named
+add.c
+
+Next, give the command 
+gcc -o add add.c 
+to compile (translate) your program.  Then run your program by
+typing
+
+./add
+
+Once it is working properly, try making some 
+intentional mistakes.  Leave off a ",  use too many or too few )'s, and so on.
+Make note of the error responses you get to these syntax errors.
+
+Your instructor will tell you how to submit your working program, which will
+be due at the beginning of your second lab period.
+
+#include <stdlib.h>
+#include <stdio.h>
+
+void main(void)
+{
+  int num1, num2;
+  int sum;
+
+  printf("Enter an integer:");
+  scanf ("%lf", &num1);
+  printf("Enter another integer:");
+  scanf ("%lf", &num2);
+
+  sum = num1 + num2;
+  printf("The sum of %d and %d is %d", num1, num2, sum);
+}
